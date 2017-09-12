@@ -1,2 +1,4 @@
 /figwheel_server.log
 .\#project.clj
+.DS_Store
+/target
