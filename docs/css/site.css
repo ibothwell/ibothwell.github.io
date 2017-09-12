@@ -1,0 +1,76 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #FEED00;
+}
+main.home {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.vcard-wrapper {
+  display: inline-block;
+  min-width: 50vw;
+}
+.vcard {
+  border: .5em #000 solid;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+.vcard div {
+  border: 1px #000 solid;
+  margin: 0;
+}
+.vcard div.wrapper {
+  padding: 0;
+  border: none;
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: grow;
+}
+.vcard > div.wrapper:first-child {
+  flex-direction: row;
+}
+.vcard > div.wrapper:first-child > div.wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.vcard > div.wrapper:first-child > div.wrapper > div {
+  flex-grow: 1;
+}
+.vcard .logo,
+.vcard .fn,
+.vcard .roles,
+.vcard .adr,
+.vcard .geo {
+  padding: .3em;
+}
+.vcard .logo {
+  font-weight: 300;
+  font-size: 5em;
+}
+.vcard .fn {
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 2em;
+}
+.vcard .fn .additional-name {
+  font-weight: 300;
+  font-size: 1em;
+}
+.vcard .fn .additional-name:after {
+  content: ".";
+}
+.vcard .roles > ul {
+  margin: 0;
+  padding: 0;
+}
+.vcard .roles > ul li {
+  list-style: none;
+  padding: 0;
+}
